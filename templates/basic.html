@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medium bot</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/basic.css') }}">
+</head>
+
+<body>
+	<header>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<div id="banner">
+		<div id="banner-content">
+		MEDIUM BOT
+		</div>
+		</div>
+	</header>
+		
+	<section>
+		<form class="form-inline" method="POST" >
+			<div class="form-group">
+				<div class="input-group">
+					For which keyword do you want to follow people? : 
+					<span class="input-group-addon"></span>
+						<input type="text" name="keyword"> <br>
+					Your Facebook email adress : 
+					<span class="input-group-addon"></span>
+						<input type="text" name="email_fb"> <br>
+					Your Facebook password : 
+					<span class="input-group-addon"></span>
+						<input type="password" name="password_fb"> <br>
+					<button type="submit" class="button" onclick="$('#loading').show();">Go</button>
+				</div>
+			</div>
+		</form>
+	</section>
+	<section>
+		<div id="loading" style="display:none;">
+			Please wait while your robot works for you...
+			<br><br>
+			<img src="/static/loading.gif" alt="">
+		</div>
+	</section>
+</body>
+</html>
