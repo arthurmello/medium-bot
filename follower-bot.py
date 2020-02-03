@@ -10,7 +10,6 @@ from selenium import webdriver, common
 from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 import random
-import getpass
 from flask import Flask, request, render_template
 import os
 
