@@ -1,5 +1,4 @@
-# Investor Tool
-
+# Medium bot
 This is a tool to automatically follow users on Medium, based on the articles they have clapped for.
 
 ## Full description
